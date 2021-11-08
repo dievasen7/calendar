@@ -46,11 +46,11 @@ $finish = (int) (date('N', mktime(0, 0, 0, $currentMonth, $days, $currentYear)))
 // Броя на дните в предходния месец които ще покажем в календара:
 $laststart = $start - 1;
 // Брой дни на предходния месец в календара:
-$lastmonth = date("t", mktime(0, 0, 0, $currentMonth - 1, 1, $currentYear)); // Days in previous month
-// 
+$lastmonth = date("t", mktime(0, 0, 0, $currentMonth - 1, 1, $currentYear));
+// Променливи на броячи започващи от 1, за текущия и следващия месец:
 $counter = 1;
 $nextMonthCounter = 1;
-//Променлива за запис на class на клетките на календара
+//Променлива за запис на class на клетките на календара:
 $class = 'fw-bold';
 ?>
 <!doctype html>
